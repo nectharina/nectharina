@@ -1,0 +1,269 @@
+html, body { height: 100%; }
+
+body {
+	color: #32363B;
+	background: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	display: grid;
+	height: 100vh;
+	place-items: center center;
+	margin: 0;
+
+}
+
+p {
+	font-weight: 500;
+	line-height: 1.4
+}
+
+h1 { 
+	letter-spacing: -1px;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+a {text-decoration: none; color: #fff;}
+a:hover, a:active { text-decoration: underline;}
+
+.work-item h2,
+.text-section h2 {
+	font-size: 2em;
+}
+
+.text-section a:hover,
+.text-section a:active {
+	color: #e4556b;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+	color: #fff;
+	background: #e4556b;
+}
+::selection {
+	color: #fff;
+	background: #e4556b;
+}
+
+
+/* HOME */
+
+#title {
+	background: #32363B;
+	color: #fff;
+	width: 100%;
+	height: 80vh;
+	padding: 10vh 0;
+	text-align: center;
+}
+
+.fruta {
+	width: 50vw;
+	margin: 0 auto;
+}
+
+.lettering {
+	width: 50vw;
+	margin: 0 auto;
+}
+
+#title nav {
+	margin: 40px auto;
+}
+
+#title nav a {
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+#title .fruta {
+	margin-bottom: 20px;
+}
+
+#title .lettering {
+	margin-bottom: 60px;
+}
+
+.left, .right {
+	display: grid;
+	place-items: center center;
+	float: none;
+}
+
+/*.left h2 {
+	font-family: 'Dancing Script', cursive;
+}*/
+
+/* ----- ABOUT ----- */
+
+#about {
+	background: #e4556b;
+}
+
+.text-section {
+	color: #fff;
+	width: 100%;
+}
+
+.text-section .right {
+	color: #444;
+	background: #fff
+}
+
+#about div {
+	height: auto;
+	min-height: 30vh;
+	overflow: hidden;
+}
+
+
+.work-item {
+	width: 100%;
+	height: 100vh;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+
+#title nav,
+#work nav {
+	align-self: flex-end;
+}
+
+#work .right,
+#work img {
+	width: 100%;
+	margin: auto;
+}
+
+.supplius .right {
+	background: #424E4A;
+}
+
+.supplius .right img {
+	width: 30vw;
+}
+
+#contact .left {
+	background: #32363B;
+	color: #fff;
+}
+
+#contact a {
+	color: #32363B;
+}
+
+#contact .right {
+	background: #f2f2f2;
+	color: #32363B;
+	text-align: center;
+}
+
+#contact .fruta {
+	width: 96px;
+}
+
+#contact .right h2 {
+	font-size: 1.6em;
+	font-weight: 600
+}
+
+@media (max-width: 599px) {
+
+	.text-block,
+	.work-item .info {
+		padding: 48px 24px 24px;
+	}
+
+	.work-item.arredondar { display: flex; flex-direction: column; }
+	.work-item.arredondar .right { order: 2; }
+	.work-item.arredondar .left { order: 1; }
+
+	.renault {
+		background: #fc0;
+	}
+	
+	.brasilseg {
+		background: #eedbbd;
+	}
+
+	.arredondar {
+		background: #2e2d7f;
+		color: #fff
+	}
+
+	.supplius {
+		background: #424e4a;
+		color: #fff;
+	}
+
+	#contact .left {
+		color: #32363B;
+		background: #fff;
+	}
+
+	#contact .fruta {
+		width: 200px;
+	}
+
+	#contact .text-block {
+		padding-top: 0;
+	}
+
+
+}
+
+@media (min-width: 600px) {
+	.text-block,
+	.work-item .info {
+		padding: 48px;
+	}
+
+	.left, .right {
+		height: 100vh;
+		width: 50%;
+		float: left;
+		display: grid;
+		place-items: center center;
+	}
+
+	.fruta {
+		width: 20vw;
+		margin: 0 auto;
+	}
+
+	.lettering {
+		width: 30vw;
+		margin: 0 auto;
+	}
+	
+	#about div {
+		height: auto;
+		min-height: 100vh;
+		overflow: hidden;
+	}
+
+	#work .right,
+	#work img {
+		width: 50vw;
+		margin: 0;
+	}
+
+	#contact .left h2 {
+		font-size: 3em;
+		font-weight: 200
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.text-block,
+	.work-item .info {
+		padding: 96px;
+	}
+}
+
+
